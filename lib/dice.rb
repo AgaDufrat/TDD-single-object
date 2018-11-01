@@ -4,8 +4,9 @@ class Dice
   end
 
   def roll
-    sum = 0
-    @num_of_dice.times { sum += rand(1..6) }
-    sum
+    @rolls = []
+    @num_of_dice.times { @rolls.push(rand(1..6)) }
+    @rolls
   end
+
 end
