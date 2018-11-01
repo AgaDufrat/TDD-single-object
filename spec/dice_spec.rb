@@ -7,7 +7,7 @@ describe Dice do
 
 describe '#roll' do
   it 'returns number between 1 - 6' do
-    expect(subject.roll).to eq(1)
+    expect(subject.roll).to be_between(1, 6).inclusive
   end
 end
 
